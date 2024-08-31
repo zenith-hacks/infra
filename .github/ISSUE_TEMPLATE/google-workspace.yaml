@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this form. We hope you find this useful. If you run into difficulties, please contact leo@zenithhacks.org or @LKMW on Slack.
+        Thanks for taking the time to fill out this form. We hope you find this useful. If you run into difficulties, please contact leo@zenithhacks.org or @leowilkin (LKMW) on Slack.
   - type: input
     id: existing-contact
     attributes:
@@ -18,11 +18,19 @@ body:
     validations:
       required: true
   - type: input
+    id: name
+    attributes:
+      label: Your Name
+      description: What's your name for the account? Full, sensible name please!
+      placeholder: ex. Leo Wilkin
+    validations:
+      required: true
+  - type: input
     id: new-email
     attributes:
       label: Your New Zenith Hacks Email
-      description: Please enter the full email address you are requesting.
-      placeholder: ex. leo@zenithhacks.org
+      description: Please enter the full email address you are requesting. This MUST be your full, first name. If the email you are requesting has already been taken, @leowilkin will contact you.
+      placeholder: ex. leo@zenithhacks.org, NOT l@, or leow@
       value: "@zenithhacks.org"
     validations:
       required: true
