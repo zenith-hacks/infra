@@ -39,8 +39,8 @@ body:
     id: who
     attributes:
       label: Who gets access?
-        description: "Please add a full list of contacts with a @zenithhacks.org email that should get access."
-        placeholder: e.g leo@zenithhacks.org, rushil@zenithhacks.org
+      description: "Please add a full list of contacts with a @zenithhacks.org email that should get access"
+      placeholder: e.g leo@zenithhacks.org, rushil@zenithhacks.org
     validations:
       required: true
   - type: dropdown
