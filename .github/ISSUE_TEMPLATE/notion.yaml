@@ -1,0 +1,48 @@
+name: Notion Access Request
+description: Get access to the Zenith Hacks Notion!
+title: "[NTN]: "
+labels: ["notion"]
+assignees:
+  - leowilkin
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this Notion access request form. If you need help, please reach out to leo@zenithhacks.org or @leowilkin (LKMW on Slack).
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info? You must provide an email and Slack user ID.
+      placeholder: ex. leo@wilkin.xyz && U07BLJ1MBEE
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why do you need access?
+      description: What makes me want to approve you, huh?
+      placeholder: I'm adding sponsorship requests for Zenith, and I need edit access!
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Who are you?
+      description: What's your role in the project?
+      options:
+        - I'm a Core Orga team member!
+        - I'm a participant!
+        - Other
+        - None of the above
+      default: 0
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/zenith-hacks/code-of-conduct/blob/main/code_of_conduct.md). 
+      options:
+        - label: I agree to follow Zenith Hacks' Code of Conduct
+          required: true
