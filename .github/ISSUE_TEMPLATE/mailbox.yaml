@@ -22,7 +22,7 @@ body:
     id: new-email
     attributes:
       label: Shared Mailbox name
-      description: Please enter the full email address you are requesting. If the email you are requesting has already been taken, @leowilkin will contact you.
+      description: "Please enter the full email address you are requesting. If the email you are requesting has already been taken, @leowilkin will contact you."
       placeholder: ex. sponsorships@zenithhacks.org
       value: "@zenithhacks.org"
     validations:
@@ -39,7 +39,7 @@ body:
     id: who
     attributes:
       label: Who gets access?
-        description: Please add a full list of contacts with a @zenithhacks.org email that should get access.
+        description: "Please add a full list of contacts with a @zenithhacks.org email that should get access."
         placeholder: e.g leo@zenithhacks.org, rushil@zenithhacks.org
     validations:
       required: true
