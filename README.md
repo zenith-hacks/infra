@@ -5,7 +5,7 @@ The motherlode of github issue forms for orga &amp; key teams to use zenith infr
 
 - [ ] DNS Request
 - [ ] GitHub Org
-- [ ] @zenithhacks.org email
+- [X] [@zenithhacks.org email](https://github.com/zenith-hacks/infra/issues/new?assignees=leowilkin&labels=email&projects=&template=google-workspace.yaml&title=%5BEMAIL%5D%3A+)
 - [ ] HCB
 - [ ] Repo Creation
 - [ ] Shared mailbox request
