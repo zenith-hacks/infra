@@ -8,3 +8,11 @@ body:
     attributes:
       value: |
         Please reach out to leo@zenithhacks.org or @leowilkin (LKMW on Slack) with the details of your DNS records.
+  - type: checkboxes
+    attributes:
+      label: I understand.
+      description: Do not submit this issue!
+      options:
+        - label: yes
+          required: true
+      
