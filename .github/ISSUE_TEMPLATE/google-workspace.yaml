@@ -23,7 +23,7 @@ body:
       label: Your New Zenith Hacks Email
       description: Please enter the full email address you are requesting.
       placeholder: ex. leo@zenithhacks.org
-      value: @zenithhacks.org
+      value: "@zenithhacks.org"
     validations:
       required: true
   - type: input
