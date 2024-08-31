@@ -1,0 +1,10 @@
+name: DNS Request
+description: Add a record to .org
+title: "[DNS]: "
+assignees:
+  - leowilkin
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please reach out to leo@zenithhacks.org or @leowilkin (LKMW on Slack) with the details of your DNS records.
