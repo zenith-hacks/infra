@@ -8,56 +8,54 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to fill out this form. We hope you find this useful. If you run into difficulties, please contact leo@zenithhacks.org or @LKMW on Slack.
   - type: input
-    id: contact
+    id: existing-contact
     attributes:
       label: Contact Details
       description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      placeholder: ex. leo@wilkin.xyz or @LKMW on Slack
     validations:
       required: true
-  - type: textarea
-    id: what-happened
+  - type: input
+    id: new-email
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Your New Zenith Hacks Email
+      description: Please enter the full email address you are requesting.
+      placeholder: ex. leo@zenithhacks.org
+      value: @zenithhacks.org
+    validations:
+      required: true
+  - type: input
+    id: why
+    attributes:
+      label: Why do you need access?
+      description: Please tell us why you think you need an email.
+      placeholder: I need an email to email sponsors
+      value: I would like a Zenith Hacks email so I can...
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: role
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: What is your role with Zenith Hacks
+      description: We need to find out whether you are eligible for an email address.
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - I am a core team member!
+        - I am a participant!
+        - I am Orpheus!
+        - I have no clue why I am doing this form
+        - Other (please add details above)
       default: 0
     validations:
       required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
   - type: checkboxes
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
+      description: By submitting this request, you agree to follow our [Code of Conduct](https://zenithhacks.org/code-of-conduct/) and the [Zenith Google Workspace Code of Conduct](#)
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: I agree to follow Zenith Hack's Code of Conduct
+          required: true
+        - label: I agree to follow Zenith Hack's Google Workspace Code of Conduct
           required: true
