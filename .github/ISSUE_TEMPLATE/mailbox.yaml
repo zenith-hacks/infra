@@ -1,0 +1,79 @@
+name: Get a @zenithhacks.org shared mailbox
+description: File a request to receive a Zenith Hacks official shared mailbox
+title: "[MAILBOX]: "
+labels: ["email"]
+assignees:
+  - leowilkin
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this form. We hope you find this useful. If you run into difficulties, please contact leo@zenithhacks.org or @leowilkin (LKMW) on Slack.
+  - type: input
+    id: existing-contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info? You **must** provide a @zenithhacks.org email address.
+      placeholder: ex. leo@zenithhacks.org
+      value: "@zenithhacks.org"
+    validations:
+      required: true
+  - type: input
+    id: new-email
+    attributes:
+      label: Shared Mailbox name
+      description: Please enter the full email address you are requesting. If the email you are requesting has already been taken, @leowilkin will contact you.
+      placeholder: ex. sponsorships@zenithhacks.org
+      value: "@zenithhacks.org"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why do you need access?
+      description: Please tell us why you think you need a mailbox.
+      placeholder: I need a mailbox to let participants email with safeguarding concerns!
+    validations:
+      required: true
+  - type: textarea
+    id: who
+    attributes:
+      label: Who gets access?
+        description: Please add a full list of contacts with a @zenithhacks.org email that should get access.
+        placeholder: e.g leo@zenithhacks.org, rushil@zenithhacks.org
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: "What type of mailbox should this be?"
+      description: "If it's `recieve only`, you will get emails forwarded to your inbox, and you can reply using your personal @z email. If it's `receive and send`, when you reply, it will come from the mailbox address e.g. sponsorships@z. If you're not sure, select `receive only`"
+      options:
+        - Receive only
+        - Send and receive
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: What is your role with Zenith Hacks
+      description: We need to find out whether you are eligible for an email address.
+      options:
+        - I am a core team member!
+        - I am a participant!
+        - I am Orpheus!
+        - I have no clue why I am doing this form
+        - Other (please add details above)
+      default: 0
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this request, you agree to follow our [Code of Conduct](https://github.com/zenith-hacks/code-of-conduct/blob/main/code_of_conduct.md) and the [Zenith Google Workspace Code of Conduct](https://github.com/zenith-hacks/code-of-conduct/blob/main/g-workspace-conduct.md)
+      options:
+        - label: I agree to follow Zenith Hack's Code of Conduct
+          required: true
+        - label: I agree to follow Zenith Hack's Google Workspace Code of Conduct
+          required: true
