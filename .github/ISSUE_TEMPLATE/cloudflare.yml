@@ -1,0 +1,56 @@
+name: Cloudflare Access Request
+description: Get access to the Zenith Hacks Cloudflare account
+title: "[CF]: "
+labels: ["cloudflare"]
+assignees:
+  - iamawatermelo
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out the Cloudflare access request form. If you need help, please reach out to Sarah on Slack.
+        This form is not for participants or people outside of the Zenith team.
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: Enter your Slack username.
+      placeholder: ex. sharajarajsarahs
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What do you need access to?
+      description: Please ask for the **bare minimum** needed to do whatever it is that you're doing.
+      placeholder: DNS and Cloudflare Pages
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why do you need access to this data?
+      description: Describe the reason you need access to this data clearly and concisely.
+      placeholder: I'm making a site for our brand kit
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Who are you?
+      description: What's your role in the project?
+      options:
+        - I'm a team member
+        - I'm a participant
+        - None of the above
+      default: 0
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/zenith-hacks/code-of-conduct/blob/main/CODE_OF_CONDUCT.md). 
+      options:
+        - label: I agree to follow Zenith Hacks' Code of Conduct
+          required: true
