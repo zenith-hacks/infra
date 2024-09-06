@@ -29,8 +29,8 @@ body:
   - type: textarea
     id: why
     attributes:
-      label: Why do you need access to this data?
-      description: Describe the reason you need access to this data clearly and concisely.
+      label: Why do you need that access?
+      description: Describe the reason you need access to Cloudflare clearly and concisely.
       placeholder: I'm making a site for our brand kit
     validations:
       required: true
