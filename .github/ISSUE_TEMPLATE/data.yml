@@ -3,12 +3,12 @@ description: Get access to the Zenith Hacks data
 title: "[DATA]: "
 labels: ["data"]
 assignees:
-  - iamawatermelo
+  - leowilkin
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this data access request form. If you need help, please reach out to Sarah on Slack.
+        Thanks for taking the time to fill out this data access request form. If you need help, please reach out to Leo on Slack.
         This form is not for participants or people outside of the Zenith team. If you have data protection concerns, review Zenith's [privacy policy](https://beta.zenithhacks.org/privacy) for contact details.
   - type: input
     id: contact
